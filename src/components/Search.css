@@ -44,7 +44,7 @@ select:-webkit-autofill:focus {
     font-size: 16px;
     line-height: 19px;
 
-    max-width: 1097px;
+    max-width: 1263px;
     width: 100%;
     height: 48px;
 
@@ -73,6 +73,8 @@ select:-webkit-autofill:focus {
 }
 
 .search-wrapper{
+    padding-right: 32px;
+    padding-left: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +85,9 @@ select:-webkit-autofill:focus {
     margin-left: 12px;
     float: left;
     margin-top: 40px;
+    min-width: 48px;
     width: 48px;
+    min-height: 48px;
     height: 48px;
     
 
@@ -109,5 +113,20 @@ form{
 
 .search-icon{
     transform: translate(0, 10%);
+}
+
+.filter-icon{
+    transform: translate(0, 10%);
+}
+
+.filter-btn{
+    margin-right: 12px;
+    float: right;
+    margin-top: 40px;
+    width: 48px;
+    height: 48px;
+    transition: 0.1s;
+    background-color: transparent;
+    border: transparent;
 }
 

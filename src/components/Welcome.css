@@ -23,23 +23,28 @@
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   text-align: left;
+  float: left;
 }
 
 .font-right{
   color: #1E1E1E;
   font-family: 'Inter', sans-serif;
   text-align: right;
+  float: right;
   font-weight: 600;
-  margin-left: 403px;
+  /* margin-left: 403px; */
 }
 
 .wrapper-wrapped{
+  
   margin-left: auto;
   margin-right: auto;
   max-width: 100vw;
   background-color: #C0BBA8;
 }
 .welcome-wrapper{
+  padding-right: 32px;
+  padding-left: 32px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
@@ -47,10 +52,10 @@
 
 .welcome{
   margin-top: 40px;
-  padding: 10px;
+  padding: 4px;
   background-color: #C0BBA8;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;

@@ -45,7 +45,7 @@
 
 .nav {
     background-color: var(--p-color);
-    height: 12vh;
+    height: 110px;
 
     padding: 2rem;
     justify-content: space-between;
@@ -62,7 +62,7 @@ a {
 .nav-box {
     display: flex;
     align-items: center;
-    width: 15%;
+    width: 13em;
     display: flex;
     justify-content: space-between;
 }
@@ -111,7 +111,8 @@ a {
     background-color: #C0BBA8;
 }
 
-.wrapper{
+.wrapper{ 
+  
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
