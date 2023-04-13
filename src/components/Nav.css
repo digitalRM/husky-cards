@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+:root {
+    --bg-color: #DAD7CD;
+    --p-color: #C0BBA8;
+    --black-color: #1E1E1E;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #DAD7CD;
+    margin: 0;
+    
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  /* Center shit inside a div */
+  .box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .v-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .h-center {
+    display: flex;
+    align-items: center;
+  }
+
+.nav {
+    background-color: var(--p-color);
+    height: 12vh;
+
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+h1{
+    color: #1E1E1E;
+}
+
+.nav-box {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .navbar > *{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+.navbar > a:first-child {
+    margin-right: auto;
+    margin-left: 0;
+} */
+
+.nav-icon {
+    color: #1E1E1E;
+    width: 2em;
+    height: 2em;
+    position: relative;
+}
+
+.nav-alert {
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+
+    background-color: #DB7676;
+    color: white;
+    /* font-size: ; */
+    position: absolute;
+    left: 1.2em;
+    bottom: 1.2em;
+}
+
+.nav-num {
+    font-size: small;
+}
+
+.wrapper-wrapped{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100vw;
+    background-color: #C0BBA8;
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+  

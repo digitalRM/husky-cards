@@ -1,5 +1,5 @@
 import React from 'react'
-import './global.css'
+import './Welcome.css'
 
 
 export default function Welcome({user}) {
