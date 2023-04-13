@@ -21,13 +21,13 @@ const Nav = ({user}) => {
         <div className="wrapper-wrapped">
             <div className="wrapper">
                 <div className="nav h-center">
-                    <h1>Husky Cards</h1>
+                    <a href="/"><h1>Husky Cards</h1></a>
                     <div className="nav-box">
-                        <NavIcon count={3}>
+                        <NavIcon count={user.unreadMessages.length}>
                             <MessageSquare size="2em"/>
                         </NavIcon>
 
-                        <NavIcon count={9}>
+                        <NavIcon count={user.cart.length}>
                             <ShoppingCart size="2em"/>
                         </NavIcon>
                         <div className="user-pfp-wrapper">
