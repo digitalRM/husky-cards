@@ -15,7 +15,7 @@ const NavIcon = (props) => {
     )
 }
 
-const Nav = (props) => {
+const Nav = ({user}) => {
     return(
         <>
         <div className="wrapper-wrapped">
@@ -30,7 +30,9 @@ const Nav = (props) => {
                         <NavIcon count={9}>
                             <ShoppingCart size="2em"/>
                         </NavIcon>
-                        <div>PFP</div>
+                        <div className="user-pfp-wrapper">
+                            <img className="user-pfp" src={user.pfp} alt="User Profile Picture" />
+                        </div>
                     </div> 
                 </div>            
             </div>            
