@@ -119,12 +119,6 @@ a {
 }
 
 .user-pfp{
-    padding: 2px;
-    cursor:pointer;
-    background-color: #DAD7CD;
-    border: 4px solid #1E1E1E;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
+  border: 4px solid #1E1E1E;
 }
   
