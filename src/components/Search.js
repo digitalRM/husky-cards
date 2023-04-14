@@ -1,8 +1,10 @@
 import React from 'react'
 import './Search.css'
-import FeatherIcon from 'feather-icons-react';
+import FeatherIcon  from 'feather-icons-react';
+import Filter from './Filter';
 
 export default function Search() {
+
 
   function handleSubmit(e) {
     e.target.search.value = '';
@@ -14,7 +16,7 @@ export default function Search() {
     <div className='search-wrapper'>
       <form onSubmit={handleSubmit}>
       <button className='filter-btn'>
-            <FeatherIcon icon="sliders" className="filter-icon" size="36" stroke-width="2.8" color="#1E1E1E" />
+        <Filter />
           </button>
         <input name="search" className='search' placeholder='Search' />
           <button className='search-btn' type="submit">

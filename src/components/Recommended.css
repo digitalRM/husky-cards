@@ -6,7 +6,7 @@
   max-width: 1418px;
   background-color: #C0BBA8;
   width: 100vw;
-  height: 528px;
+  height: 500px;
 }
 
 .recommended-wrapper {
@@ -21,8 +21,8 @@
     background-color: #C0BBA8;
     max-width: 50vw;
     width: 100vw;
-    height: 528px;
-    margin-top: -528px;
+    height: 500px;
+    margin-top: -500px;
     position: absolute;
     z-index: -1;
     right: 0;
