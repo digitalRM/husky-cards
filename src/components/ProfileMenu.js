@@ -20,15 +20,36 @@ const theme = createTheme({
           },
         },
       },
-  
+      MuiIconButton: {
+        styleOverrides: {
+          root: {
+            ':hover': {
+              backgroundColor: 'rgba(0,0,0,0)',
+            },
+          },
+        },
+      },
+      
       MuiButtonBase: {
         styleOverrides: {
           root: {
+            ':hover': {
+              backgroundColor: 'rgba(0,0,0,0)',
+            },
             paddingRight: '180px',
           },
         },
       },
-  
+      MuiAvatar: {
+        styleOverrides: {
+          root: {
+            ':hover': {
+              
+              backgroundColor: 'rgba(0,0,0,0)',
+            },
+          },
+        },
+      },
       MuiMenuItem: {
         styleOverrides: {
           root: {
@@ -45,7 +66,8 @@ const theme = createTheme({
       MuiDivider: {
         styleOverrides: {
             root: {
-                
+                marginTop: '4px',
+                marginBottom: '4px',
             },
         },
     },
@@ -84,7 +106,7 @@ export default function ProfileMenu({user}) {
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
             >
-                 <Avatar sx={{width: "80px", height: "80px", borderRadius: "250px"}} varient="circular" className="user-pfp" alt={user.name} src={user.pfp} />
+                 <Avatar sx={{width: "80px", height: "80px", borderRadius: "250px", transition: '0.2s'}} varient="circular" className="user-pfp" alt={user.name} src={user.pfp} />
             </IconButton>
             <Menu
                 anchorEl={anchorEl}
@@ -110,22 +132,35 @@ export default function ProfileMenu({user}) {
                 transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                 anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
             >
-                <MenuItem onClick={handleClose}>
+                <MenuItem sx={{':hover':{backgroundColor: "rgba(0,0,0,0)"}, marginBottom:'-4px', }} onClick={handleClose}>
                 Hey! <span className='profileMenu-username'> @{user.username}</span>
                 </MenuItem>
                 
                 <Divider />
-                <MenuItem onClick={handleClose}>
-
+                <MenuItem sx={{marginTop:'-4px', marginBottom:'-4px',}}onClick={handleClose}>
+                  <ListItemIcon>
+                    <FeatherIcon icon="plus" stroke-width="2" size="20px" color="#1E1E1E" />
+                  </ListItemIcon>
+                Post Item
+                </MenuItem>
+                <Divider />
+                <MenuItem onClick={handleClose} sx={{marginTop:'-4px',}}>
+                  <ListItemIcon>
+                    <FeatherIcon icon="user" stroke-width="2" size="20px" color="#1E1E1E" />
+                  </ListItemIcon>
                 View Profile
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
-
+                  <ListItemIcon>
+                    <FeatherIcon icon="settings" stroke-width="2" size="20px" color="#1E1E1E" />
+                  </ListItemIcon>
                 Settings
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
-
-                Logout
+                  <ListItemIcon>
+                    <FeatherIcon icon="log-out" stroke-width="2" size="20px" color="#1E1E1E" />
+                  </ListItemIcon>
+                Log Out
                 </MenuItem>
             </Menu>
         </ThemeProvider>

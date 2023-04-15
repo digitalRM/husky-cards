@@ -121,25 +121,29 @@ export default function PositionedMenu() {
           }
         }}
       >
-        <MenuItem sx={{fontFamily: 'Inter',}} onClick={handleClose}>
-          {/* <ListItemIcon>
+        <MenuItem  sx={{fontWeight: 500,':hover':{backgroundColor: "rgba(0,0,0,0)"}, marginBottom:'-4px', }} onClick={handleClose}>
+          Filter Search
+        </MenuItem>
+        <Divider />
+        <MenuItem sx={{fontFamily: 'Inter', marginTop: '-4px'}} onClick={handleClose}>
+          <ListItemIcon>
             <FeatherIcon icon="dollar-sign" stroke-width="2" size="20px" color="#1E1E1E" />
-          </ListItemIcon> */}
-          By Price
+          </ListItemIcon>
+          Price
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          {/* <ListItemIcon>
+          <ListItemIcon>
             <FeatherIcon icon="award" stroke-width="2" size="20px" color="#1E1E1E" />
-          </ListItemIcon> */}
+          </ListItemIcon>
           
-          By Rarity
+          Rarity
           </MenuItem>
         <MenuItem onClick={handleClose}>
-          {/* <ListItemIcon>
+          <ListItemIcon>
             <FeatherIcon icon="check-circle" stroke-width="2" size="20px" color="#1E1E1E" />
-          </ListItemIcon> */}
+          </ListItemIcon>
           
-          By Quality
+          Quality
         </MenuItem>
       </Menu>
       </ThemeProvider>
