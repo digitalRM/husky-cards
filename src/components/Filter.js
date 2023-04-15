@@ -33,12 +33,22 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           fontFamily: 'Inter',
-          paddingRight: '32px',
+          // paddingRight: '32px',
           fontWeight: '400',
           transition: 'all 0.2s ease-in-out',
           ':hover': {
-            backgroundColor: '#2E2E2E',
+            background: 'rgba(150, 150, 150, 0.5)',
           },
+        },
+      },
+    },
+
+
+    MuiListItemIcon: {
+      styleOverrides: {
+        root: {
+          alignItems: "flex-end",
+          
         },
       },
     },
@@ -101,31 +111,36 @@ export default function PositionedMenu() {
             transition: 'none',
             borderRadius: '15px',
             //transform: 'translateX(5%) translateY(5%)',
-            backgroundColor: '#1E1E1E',
-            color: '#FFF',
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '12px',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+            backdropFilter: 'blur(5px)',
+            webkitBackdropFilter: 'blur(5px)',
+            border: '1px solid rgba(30, 30, 30, 0.0)',
+            color: '#1E1E1E',
           }
         }}
       >
         <MenuItem sx={{fontFamily: 'Inter',}} onClick={handleClose}>
-          <ListItemIcon>
-            <FeatherIcon icon="dollar-sign" stroke-width="2" size="20px" color="#FFF" />
-          </ListItemIcon>
+          {/* <ListItemIcon>
+            <FeatherIcon icon="dollar-sign" stroke-width="2" size="20px" color="#1E1E1E" />
+          </ListItemIcon> */}
           By Price
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <FeatherIcon icon="check-circle" stroke-width="2" size="20px" color="#FFF" />
-          </ListItemIcon>
-          
-          By Quality
-          </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <FeatherIcon icon="award" stroke-width="2" size="20px" color="#FFF" />
-          </ListItemIcon>
+          {/* <ListItemIcon>
+            <FeatherIcon icon="award" stroke-width="2" size="20px" color="#1E1E1E" />
+          </ListItemIcon> */}
           
           By Rarity
           </MenuItem>
+        <MenuItem onClick={handleClose}>
+          {/* <ListItemIcon>
+            <FeatherIcon icon="check-circle" stroke-width="2" size="20px" color="#1E1E1E" />
+          </ListItemIcon> */}
+          
+          By Quality
+        </MenuItem>
       </Menu>
       </ThemeProvider>
     </div>
