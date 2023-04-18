@@ -15,7 +15,6 @@ function App() {
         <Nav user={user} />
         <Welcome user={user} />
         <Search />
-        <ProfileMenu user={user} />
         <Recommended />
        
     </>

@@ -123,11 +123,12 @@ export default function ProfileMenu({user}) {
                       background: 'rgba(255, 255, 255, 0.2)',
                       borderRadius: '12px',
                       boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                      backdropFilter: 'blur(5px)',
-                      webkitBackdropFilter: 'blur(5px)',
+                      backdropFilter: 'blur(10px)',
+                      webkitBackdropFilter: 'blur(10px)',
                       border: '1px solid rgba(30, 30, 30, 0.0)',
                       color: '#1E1E1E',
-                    }
+                    },
+                    
                   }}
                 transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                 anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}

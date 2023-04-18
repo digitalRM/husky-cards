@@ -96,7 +96,7 @@ export default function PositionedMenu() {
 
       <Menu
         theme={theme}
-        TransitionComponent={Fade}
+        // TransitionComponent={Fade}
         className="filter-menu"
         anchorEl={anchorEl}
         open={open}

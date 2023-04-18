@@ -2,7 +2,7 @@ import "./Nav.css";
 import { MessageSquare, ShoppingCart } from 'feather-icons-react';
 import Avatar from '@mui/material/Avatar';
 import Badge from '@mui/material/Badge';
-
+import ProfileMenu from "./ProfileMenu";
 
 const Nav = ({user}) => {
     return(
@@ -22,7 +22,7 @@ const Nav = ({user}) => {
                         </Badge>
 
                         <div className="">
-                            <Avatar sx={{width: "80px", height: "80px", borderRadius: "250px"}} varient="circular" className="user-pfp" alt={user.name} src={user.pfp} />
+                            <ProfileMenu user={user}/>
                         </div>
                     </div> 
                 </div>            
