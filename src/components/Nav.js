@@ -1,6 +1,6 @@
 import "./Nav.css";
 import { MessageSquare, ShoppingCart } from 'feather-icons-react';
-import Avatar from '@mui/material/Avatar';
+// import Avatar from '@mui/material/Avatar';
 import Badge from '@mui/material/Badge';
 import ProfileMenu from "./ProfileMenu";
 

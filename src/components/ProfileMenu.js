@@ -1,12 +1,10 @@
 import React from 'react'
-import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import FeatherIcon  from 'feather-icons-react';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Divider } from '@mui/material';
-import Fade from '@mui/material/Fade';
 import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
 import './ProfileMenu.css'
@@ -31,6 +29,9 @@ const theme = createTheme({
       },
       
       MuiButtonBase: {
+        defaultProps: {
+          disableRipple: true,
+        },
         styleOverrides: {
           root: {
             ':hover': {
@@ -80,11 +81,6 @@ const theme = createTheme({
           },
         },
       },
-      MuiButtonBase: {
-        defaultProps: {
-          disableRipple: true, // No more ripple, on the whole application 💣!
-        },
-      },
     },
   });
   
@@ -118,7 +114,7 @@ export default function ProfileMenu({user}) {
                     style: {
                       // left: '50%',
                       transition: 'none',
-                      borderRadius: '15px',
+                      // borderRadius: '15px',
                       //transform: 'translateX(5%) translateY(5%)',
                       background: 'rgba(255, 255, 255, 0.2)',
                       borderRadius: '12px',

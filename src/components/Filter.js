@@ -4,12 +4,12 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import FeatherIcon  from 'feather-icons-react';
 import './Filter.css'
-import Popper from '@mui/material/Popper';
+
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
+
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Divider } from '@mui/material';
-import Fade from '@mui/material/Fade';
+
 const theme = createTheme({
   components: {
     // Name of the component
@@ -22,6 +22,9 @@ const theme = createTheme({
     },
 
     MuiButtonBase: {
+      defaultProps: {
+        disableRipple: true,
+      },
       styleOverrides: {
         root: {
           paddingRight: '180px',
@@ -50,11 +53,6 @@ const theme = createTheme({
           alignItems: "flex-end",
           
         },
-      },
-    },
-    MuiButtonBase: {
-      defaultProps: {
-        disableRipple: true, // No more ripple, on the whole application 💣!
       },
     },
   },
@@ -109,7 +107,7 @@ export default function PositionedMenu() {
           style: {
             // left: '50%',
             transition: 'none',
-            borderRadius: '15px',
+            // borderRadius: '15px',
             //transform: 'translateX(5%) translateY(5%)',
             background: 'rgba(255, 255, 255, 0.2)',
             borderRadius: '12px',
